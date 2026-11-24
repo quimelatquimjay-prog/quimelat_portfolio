@@ -1,0 +1,1307 @@
+<!doctype html>
+<html
+  class="scroll-smooth"
+  lang="en"
+  style="scroll-padding-top: 5.5rem; scroll-behavior: smooth"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#858587",
+              tertiary: "#0b0000",
+              "on-secondary-container": "#61646a",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#464749",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#ffb4a3",
+              "on-primary-fixed": "#1b1c1e",
+              surface: "#f9f9fa",
+              background: "#f9f9fa",
+              outline: "#76777b",
+              "tertiary-fixed": "#ffdad2",
+              "surface-bright": "#f9f9fa",
+              "on-secondary-fixed-variant": "#44474c",
+              error: "#ba1a1a",
+              "inverse-surface": "#2f3132",
+              "secondary-fixed-dim": "#c4c6cd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#3d0600",
+              "on-background": "#1a1c1d",
+              "surface-variant": "#e2e2e3",
+              "outline-variant": "#c6c6ca",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f3f3f4",
+              "primary-fixed-dim": "#c7c6c8",
+              "secondary-container": "#e0e2e9",
+              "surface-container-high": "#e8e8e9",
+              "surface-container-highest": "#e2e2e3",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-surface-variant": "#45474a",
+              "inverse-primary": "#c7c6c8",
+              "surface-tint": "#5e5e60",
+              "surface-dim": "#dadadb",
+              "surface-container": "#eeeeef",
+              "on-tertiary-fixed-variant": "#8c1900",
+              "on-tertiary-container": "#ea4f2e",
+              secondary: "#5b5e64",
+              "tertiary-container": "#400600",
+              "on-primary": "#ffffff",
+              "primary-container": "#1c1d1f",
+              primary: "#020304",
+              "secondary-fixed": "#e0e2e9",
+              "primary-fixed": "#e3e2e4",
+              "on-secondary-fixed": "#181c21",
+              "inverse-on-surface": "#f0f1f2",
+              "on-surface": "#1a1c1d",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "1.25rem",
+              "margin-tablet": "2.5rem",
+              margin: "4rem",
+              "space-sm": "0.5rem",
+              "space-md": "1rem",
+              "gutter-mobile": "1rem",
+              gutter: "2rem",
+              "space-xl": "3rem",
+              "space-lg": "1.5rem",
+              "space-xs": "0.25rem",
+            },
+            fontFamily: {
+              "headline-xl": ["Inter"],
+              "headline-md": ["Inter"],
+              "body-sm": ["Inter"],
+              "label-sm": ["Inter"],
+              display: ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-xl-mobile": ["Inter"],
+              "headline-lg-mobile": ["Inter"],
+              "headline-lg": ["Inter"],
+              "label-md": ["Inter"],
+              "body-md": ["Inter"],
+            },
+            fontSize: {
+              "headline-xl": [
+                "3.5rem",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.025em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "1.5rem",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-sm": [
+                "0.8125rem",
+                {
+                  lineHeight: "1.45",
+                  letterSpacing: "0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "label-sm": [
+                "0.6875rem",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "4.5rem",
+                {
+                  lineHeight: "1.05",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "1.125rem",
+                {
+                  lineHeight: "1.6",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-xl-mobile": [
+                "2.25rem",
+                {
+                  lineHeight: "1.15",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "1.75rem",
+                {
+                  lineHeight: "1.25",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": [
+                "2.25rem",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-md": [
+                "0.75rem",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.06em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-md": [
+                "0.9375rem",
+                { lineHeight: "1.5", letterSpacing: "0em", fontWeight: "400" },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="text-on-surface font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary overflow-x-hidden bg-[#0a0a0c]"
+  >
+    <header
+      class="top-0 left-0 right-0 z-50 border-b sticky bg-[#0d0e11]/95 backdrop-blur-md border-[#22232a]"
+    >
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin h-16 flex items-center justify-between"
+      >
+        <a
+          class="flex items-center gap-space-xs text-[#ffffff] font-headline-md text-headline-md tracking-tight"
+          href="#"
+          ><span class="text-[#dfb256]">Q.</span><span>QUIMELAT</span></a
+        >
+        <nav class="hidden md:flex items-center gap-space-lg">
+          <a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be] hover:text-[#dfb256] transition-colors"
+            href="#about"
+            >About</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be] hover:text-[#dfb256] transition-colors"
+            href="#education"
+            >Education</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be] hover:text-[#dfb256] transition-colors"
+            href="#projects"
+            >Projects</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be] hover:text-[#dfb256] transition-colors"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="menu-toggle"
+          class="md:hidden p-2 text-[#dfb256]"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden border-t border-[#22232a] bg-[#0d0e11] px-margin-mobile py-space-md"
+      >
+        <div class="flex flex-col gap-space-md">
+          <a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be]"
+            href="#about"
+            >About</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be]"
+            href="#education"
+            >Education</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be]"
+            href="#projects"
+            >Projects</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-[#b8b9be]"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="w-full min-h-screen bg-[#0a0a0c]">
+      <div
+        class="flex flex-col w-full bg-[#0a0a0c] text-on-surface select-none"
+      >
+        <!-- Top Slide Tracker / Executive Presentation Micro Rail -->
+
+        <!-- 1. HERO SECTION -->
+        <section
+          class="relative w-full pt-space-xl pb-space-xl overflow-hidden bg-gradient-to-b from-[#0a0a0c] via-[#101115] to-[#0a0a0c]"
+        >
+          <!-- Ambient gold/amber glow -->
+          <div
+            class="absolute top-0 right-1/4 w-96 h-96 bg-[#cfa851]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2"
+          ></div>
+          <div
+            class="absolute bottom-0 left-10 w-80 h-80 bg-[#ea4f2e]/5 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center"
+            >
+              <!-- Left Content Column -->
+              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                <!-- Metadata Tag Strip -->
+                <div class="flex flex-wrap items-center gap-space-sm">
+                  <span
+                    class="px-3 py-1 bg-[#1a1c21] text-[#cfa851] font-label-sm text-label-sm uppercase tracking-widest"
+                  >
+                    VIDEO EDITOR / CONTENT CREATOR
+                  </span>
+                  <span
+                    class="px-3 py-1 bg-[#141518] text-[#9a9ba0] font-label-sm text-label-sm uppercase tracking-wider"
+                  >
+                    QUIMJAY V. QUIMELAT
+                  </span>
+                </div>
+                <!-- Master Title -->
+                <div class="flex flex-col">
+                  <h1
+                    class="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-[#ffffff] tracking-tight leading-[0.95] uppercase"
+                  >
+                    WELCOME TO<br />
+                    <span class="text-[#dfb256]">MY PORTFOLIO</span>
+                  </h1>
+                </div>
+                <!-- Bio Paragraph -->
+                <p
+                  class="font-body-lg text-body-lg text-[#b8b9be] max-w-xl leading-relaxed"
+                >
+                  I'm an Information Technology student interested in video
+                  editing and content creation. This portfolio introduces my
+                  creative direction, independent YouTube work, and the
+                  technical skills I bring to digital projects.
+                </p>
+                <!-- Focus Tagline Banner -->
+                <div
+                  class="p-space-md bg-[#131418] rounded-none flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="material-symbols-outlined text-[#dfb256] text-[20px]"
+                      >movie_filter</span
+                    >
+                    <p
+                      class="font-label-md text-label-md uppercase tracking-wider text-[#dfb256] font-semibold"
+                    >
+                      FOCUS: EDITING • PACING • VISUAL PRESENTATION
+                    </p>
+                  </div>
+                </div>
+                <!-- Quick Action Buttons -->
+                <div
+                  class="flex flex-wrap items-center gap-space-md pt-space-xs"
+                >
+                  <a
+                    class="inline-flex items-center justify-center gap-space-sm px-space-lg h-12 bg-[#dfb256] text-[#0a0a0c] font-label-md text-label-md uppercase tracking-widest font-semibold hover:bg-[#eac470] transition-colors shadow-lg shadow-[#dfb256]/10"
+                    href="#projects"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >play_circle</span
+                    >
+                    <span>View Work</span>
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center gap-space-sm px-space-lg h-12 bg-[#1a1c22] text-[#f9f9fa] font-label-md text-label-md uppercase tracking-widest hover:bg-[#272930] transition-colors"
+                    href="#contact"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >mail</span
+                    >
+                    <span>Let's Connect</span>
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center px-space-md h-12 text-[#9a9ba0] hover:text-[#ffffff] font-label-md text-label-md uppercase tracking-wider transition-colors"
+                    href="#about"
+                  >
+                    Read Intro ↓
+                  </a>
+                </div>
+              </div>
+              <!-- Right Portrait Hero Card -->
+              <div class="lg:col-span-5 flex flex-col items-center">
+                <div
+                  class="relative w-full max-w-sm lg:max-w-none mx-auto lg:mx-0 group"
+                >
+                  <div
+                    class="absolute -top-3 -right-3 w-full h-full bg-[#1b1c22] z-0"
+                  ></div>
+                  <div
+                    class="absolute -bottom-3 -left-3 w-full h-full bg-[#201d14] z-0"
+                  ></div>
+                  <div
+                    class="relative z-10 w-full bg-[#121317] overflow-hidden shadow-2xl"
+                  >
+                    <div
+                      class="relative w-full aspect-[4/5] bg-[#22242a] overflow-hidden"
+                    >
+                      <img
+                        alt="Formal portrait of Quimjay V. Quimelat in black suit and tie against a clean studio neutral background"
+                        class="w-full h-full object-cover object-top filter grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWei3DPBroWd676xJa1bl2zJCgl8K7z2EWX4jH0-vMwzwtEAy3I3IDlgQvSOAR5YNiMRvISqNa-8f0kyzSZ8Sqbe5l8BGxK67o5z3aWUHtB8YFM_iZ_s648aDQ8WAycLMx0BYZj4A9QDieOpIj7JSSNTCtDNVuPV0jNH5q4ad8W-jYiidYXOIC74OYuEw8TRJm4koZN7nKuBr2w3KPhIRDKcivWxCUKR3tvEED5Dy8XHCx68ZlYQI1"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0d0e12] via-transparent to-transparent opacity-80"
+                      ></div>
+                      <div
+                        class="absolute bottom-4 left-4 right-4 flex items-end justify-between"
+                      >
+                        <div>
+                          <p
+                            class="font-headline-md text-headline-md text-[#ffffff] font-medium leading-tight"
+                          >
+                            Quimjay V. Quimelat
+                          </p>
+                          <p
+                            class="font-label-sm text-label-sm uppercase tracking-wider text-[#dfb256]"
+                          >
+                            Student Editor
+                          </p>
+                        </div>
+                        <span
+                          class="material-symbols-outlined text-[#dfb256] text-[28px]"
+                          >verified</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="p-space-md bg-[#131419] flex items-center justify-between"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm text-[#76777b] uppercase"
+                        >ROXAS CITY, PH</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 2. ABOUT / INTRODUCTION SECTION (#about) -->
+        <section
+          class="w-full py-space-xl bg-[#0e0f13] relative"
+          id="about"
+          style="scroll-margin-top: 5.5rem"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                    >&nbsp;• INTRODUCTION</span
+                  >
+                  <span class="w-8 h-[1px] bg-[#dfb256]"></span>
+                </div>
+                <h2
+                  class="font-display text-headline-xl text-[#ffffff] uppercase tracking-tight"
+                >
+                  GET TO KNOW ME
+                </h2>
+              </div>
+              <p
+                class="font-label-md text-label-md uppercase tracking-widest text-[#76777b]"
+              >
+                FOUNDATION // BSIT 3RD YEAR • FCU
+              </p>
+            </div>
+            <!-- Core Statement Box -->
+            <div class="p-space-lg md:p-space-xl bg-[#14151a] shadow-xl">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256] mb-space-sm block"
+                >EXECUTIVE SUMMARY</span
+              >
+              <p
+                class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#f3f3f4] font-medium leading-snug"
+              >
+                “Creative and detail-oriented 3rd-year Information Technology
+                student seeking opportunities as a Video Editor and Content
+                Creator.”
+              </p>
+            </div>
+            <!-- Asymmetrical 2-Column: Studio Desk Visual + Editorial Attributes -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch"
+            >
+              <!-- Left: Studio Setup Visual (Slide 3 desk setup) -->
+              <div class="lg:col-span-5 flex flex-col">
+                <div
+                  class="relative h-full min-h-[380px] bg-[#16171d] overflow-hidden flex flex-col justify-between group shadow-xl"
+                >
+                  <!-- Workstation Image -->
+                  <div
+                    class="relative w-full aspect-video sm:aspect-auto sm:h-96 lg:h-full overflow-hidden"
+                  >
+                    <img
+                      alt="Quimjay's video editing workstation showing widescreen display, custom mechanical keyboard with RGB backlights, dual mice, and in-ear audio monitors on desk"
+                      class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ5t_mRbSDbghJDVddgDt5Acm87sqvWwUtnF8Xt5JCoO6EkofHCcUqleiUp6HJ6P2rV4DFVf5b-LJQkGJI6BGl1w3hgfW8PWoUD6BrcQrHE1AtTwrwIUWmoz7mEDnATRO2dPij6N3GKuS6dvXl2PCiqKel_MYMy1T1x-Nq8WlGobs6krW5P1X2NDNoBC6MWvWonK707XB_Ixda98e5Vy9Qcgyd7Dj7Sb1AkaZ4fKvWTjewEX8pty5P"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#0e0f13] via-[#0e0f13]/30 to-transparent"
+                    ></div>
+                    <!-- Badge overlay -->
+                    <div
+                      class="absolute top-4 left-4 px-3 py-1 bg-[#0a0a0c]/80 backdrop-blur-md text-[#dfb256] font-label-sm text-label-sm uppercase tracking-widest"
+                    >
+                      EDIT SUITE • HARDWARE DECK
+                    </div>
+                  </div>
+                  <!-- Description under photo -->
+                  <div
+                    class="p-space-md bg-[#13141a] flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wider text-[#ffffff] font-medium"
+                      >Digital Production Setup</span
+                    >
+                    <p class="font-body-sm text-body-sm text-[#9a9ba0]">
+                      Clean dual-input peripheral desk configured for
+                      high-throughput video cutting, asset organizing, and
+                      multi-timeline scrubbing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Right: Background, Working Approach & Personal Details -->
+              <div class="lg:col-span-7 flex flex-col gap-gutter">
+                <!-- Dual Horizontal Pillars: BACKGROUND & WORKING APPROACH -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <!-- Background Card -->
+                  <div
+                    class="p-space-lg bg-[#14151a] flex flex-col justify-between gap-space-md"
+                  >
+                    <div class="flex flex-col gap-space-xs">
+                      <div
+                        class="w-8 h-8 rounded-none bg-[#201d14] flex items-center justify-center text-[#dfb256] mb-2"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >terminal</span
+                        >
+                      </div>
+                      <h3
+                        class="font-headline-md text-headline-md text-[#dfb256] font-semibold tracking-wide uppercase"
+                      >
+                        BACKGROUND
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-[#d5d6db] leading-relaxed"
+                    >
+                      Combines an IT foundation with an interest in digital
+                      video, YouTube content, and audience-focused storytelling.
+                    </p>
+                  </div>
+                  <!-- Working Approach Card -->
+                  <div
+                    class="p-space-lg bg-[#14151a] flex flex-col justify-between gap-space-md"
+                  >
+                    <div class="flex flex-col gap-space-xs">
+                      <div
+                        class="w-8 h-8 rounded-none bg-[#201d14] flex items-center justify-center text-[#dfb256] mb-2"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >tune</span
+                        >
+                      </div>
+                      <h3
+                        class="font-headline-md text-headline-md text-[#dfb256] font-semibold tracking-wide uppercase"
+                      >
+                        WORKING APPROACH
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-[#d5d6db] leading-relaxed"
+                    >
+                      Values clear sequencing, thoughtful pacing, organized
+                      media assets, problem-solving, and learning new creative
+                      tools.
+                    </p>
+                  </div>
+                </div>
+                <!-- Triple Info Strips: Personal Info, Goals, Creative Interests -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+                  <div
+                    class="p-space-md bg-[#121317] flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256] font-semibold"
+                      >PERSONAL INFO</span
+                    >
+                    <p class="font-body-sm text-body-sm text-[#b8b9be]">
+                      Based in Roxas City, Capiz, Philippines. 3rd-year BSIT
+                      student at Filamer Christian University.
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md bg-[#121317] flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256] font-semibold"
+                      >GOALS &amp; ASPIRATIONS</span
+                    >
+                    <p class="font-body-sm text-body-sm text-[#b8b9be]">
+                      Develop stronger editing skills, create engaging content
+                      for online audiences, and build a lasting video portfolio.
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md bg-[#121317] flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256] font-semibold"
+                      >CREATIVE INTERESTS</span
+                    >
+                    <p class="font-body-sm text-body-sm text-[#b8b9be]">
+                      YouTube videos, meme content, visual storytelling, video
+                      concepts, and mastering advanced techniques.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 3. EDUCATION & SKILLS SECTION (#education) -->
+        <section
+          class="w-full py-space-xl bg-[#0a0a0c] relative"
+          id="education"
+          style="scroll-margin-top: 5.5rem"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Header with Metrics -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <span class="w-8 h-[1px] bg-[#dfb256]"></span>
+                </div>
+                <h2
+                  class="font-display text-headline-xl text-[#ffffff] uppercase tracking-tight"
+                >
+                  EDUCATION &amp; SKILLS
+                </h2>
+              </div>
+              <div class="flex items-center gap-space-lg text-[#9a9ba0]">
+                <div></div>
+                <div class="w-[1px] h-8 bg-[#272930]"></div>
+                <div>
+                  <span
+                    class="font-headline-md text-headline-md text-[#dfb256] block font-semibold"
+                    >100%</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-[#76777b]"
+                    >Independent Drive</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Education Anchor Card -->
+            <div
+              class="p-space-lg bg-[#14151b] flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md shadow-lg"
+            >
+              <div class="flex items-start gap-space-md">
+                <div
+                  class="w-12 h-12 bg-[#201d14] flex items-center justify-center shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-[#dfb256] text-[28px]"
+                    >school</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                    >FORMAL EDUCATION</span
+                  >
+                  <h3
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    Bachelor of Science in Information Technology
+                  </h3>
+                  <p class="font-body-md text-body-md text-[#b8b9be]">
+                    3rd-Year Student • Filamer Christian University, Roxas City,
+                    Capiz
+                  </p>
+                </div>
+              </div>
+              <div
+                class="px-space-md py-space-xs bg-[#1f2027] text-[#e2e2e3] font-label-md text-label-md uppercase tracking-widest shrink-0"
+              >
+                Enrolled • 2026–Present
+              </div>
+            </div>
+            <!-- 4 Core Competency Cards Grid -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
+            >
+              <!-- Skill 1: Video Editing -->
+              <div
+                class="p-space-lg bg-[#121318] flex flex-col justify-between gap-space-lg hover:bg-[#16181f] transition-all group shadow-md"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[#dfb256] text-[24px]"
+                      >movie_edit</span
+                    >
+                  </div>
+                  <h4
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    VIDEO EDITING
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-[#b8b9be] leading-relaxed"
+                  >
+                    Cutting and trimming footage, arranging clips, pacing,
+                    transitions, basic color correction, and audio balancing.
+                  </p>
+                </div>
+                <!-- Capability tags -->
+                <div class="flex flex-wrap gap-1.5 pt-space-xs">
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Cutting</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Pacing</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Transitions</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Audio Level</span
+                  >
+                </div>
+              </div>
+              <!-- Skill 2: YouTube & Content -->
+              <div
+                class="p-space-lg bg-[#121318] flex flex-col justify-between gap-space-lg hover:bg-[#16181f] transition-all group shadow-md"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[#ea4f2e] text-[24px]"
+                      >smart_display</span
+                    >
+                  </div>
+                  <h4
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    YOUTUBE &amp; CONTENT
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-[#b8b9be] leading-relaxed"
+                  >
+                    Video preparation, content planning, title and thumbnail
+                    concepts, audience-focused storytelling, and platform-ready
+                    exports.
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-1.5 pt-space-xs">
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >YouTube Formats</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Thumbnails</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Exports</span
+                  >
+                </div>
+              </div>
+              <!-- Skill 3: Creative Workflow -->
+              <div
+                class="p-space-lg bg-[#121318] flex flex-col justify-between gap-space-lg hover:bg-[#16181f] transition-all group shadow-md"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[#dfb256] text-[24px]"
+                      >account_tree</span
+                    >
+                  </div>
+                  <h4
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    CREATIVE WORKFLOW
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-[#b8b9be] leading-relaxed"
+                  >
+                    Short- and long-form concepts, basic scripting, media-asset
+                    organization, attention to detail, and incorporating
+                    feedback.
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-1.5 pt-space-xs">
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Scripting</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1b1c23] text-[#a5a6ac] font-label-sm text-label-sm"
+                    >Short-Form</span
+                  >
+                </div>
+              </div>
+              <!-- Skill 4: Tools & Adaptability -->
+              <div
+                class="p-space-lg bg-[#121318] flex flex-col justify-between gap-space-lg hover:bg-[#16181f] transition-all group shadow-md"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[#38bdf8] text-[24px]"
+                      >auto_fix_high</span
+                    >
+                  </div>
+                  <h4
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    TOOLS &amp; ADAPTABILITY
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-[#b8b9be] leading-relaxed"
+                  >
+                    Alight Motion, CapCut, and Pinterest. Open to learning
+                    additional editing software and production tools.
+                  </p>
+                </div>
+                <!-- Tool Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-space-xs">
+                  <span
+                    class="px-2 py-0.5 bg-[#221f15] text-[#dfb256] font-label-sm text-label-sm font-medium"
+                    >Alight Motion</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#17202a] text-[#7dd3fc] font-label-sm text-label-sm font-medium"
+                    >CapCut</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#261517] text-[#f87171] font-label-sm text-label-sm font-medium"
+                    >Pinterest</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-[#1c1d22] text-[#e2e2e3] font-label-sm text-label-sm"
+                    >+ Adaptable</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 4. CREATIVE EXPERIENCE & PROJECTS SECTION (#projects) -->
+        <section
+          class="w-full py-space-xl bg-[#0e0f13] relative"
+          id="projects"
+          style="scroll-margin-top: 5.5rem"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                    >&nbsp;• PORTFOLIO SHOWCASE</span
+                  >
+                  <span class="w-8 h-[1px] bg-[#dfb256]"></span>
+                </div>
+                <h2
+                  class="font-display text-headline-xl text-[#ffffff] uppercase tracking-tight"
+                >
+                  CREATIVE EXPERIENCE &amp; HIGHLIGHTS
+                </h2>
+              </div>
+              <span
+                class="font-label-md text-label-md uppercase tracking-widest text-[#76777b]"
+              >
+                INDEPENDENT PRODUCTIONS
+              </span>
+            </div>
+            <!-- Experience Highlight Block 1: YouTube Video Projects & Meme Channel -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch"
+            >
+              <!-- Left: Montage Image from Slide 6 -->
+              <div class="w-full flex flex-col">
+                <div
+                  class="relative w-full h-full min-h-[380px] bg-[#14151b] overflow-hidden group shadow-xl rounded-lg border border-[#dfb256]/30 hover:border-[#dfb256]/70 transition-all duration-500"
+                >
+                  <img
+                    alt="Montage of video editing projects including Filamer Christian University 120th Foundation Anniversary graphic, League of Legends gaming montage titled LANER IVE, and outdoor vlog footage"
+                    class="w-full h-full object-cover filter brightness-95 group-hover:scale-105 group-hover:brightness-100 transition-all duration-500 ease-out"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAoisvFqjf7E6e_xUA0kvwDFUcfcrJyPWL17QuqDM-er_F29PpU0JwI6IWSSRun2mea0VYaBK3uV2un6muUp97AgCsgst-svBPGs-Hppux9enZd4q50PJD0iZpivl-Z727HiDuuopnJ_mKxe7Lz3y8W2NhXsl6xLU8qpGq0zvhQBIuysZUySHW2DgaxeC6kiNCOTnk_xvFL4QPScnQXmNAr6KB6fOI0AVUhZIWbXKiKywY5Rzme0wL"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#0e0f13] via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500"
+                  ></div>
+                  <div
+                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#ffffff]"
+                  >
+                    <div>
+                      <p
+                        class="font-label-md text-label-md uppercase text-[#dfb256] font-medium tracking-wide"
+                      >
+                        Filamer 120th • Gaming • Vlogs
+                      </p>
+                      <p class="font-body-sm text-body-sm text-[#b8b9be]">
+                        Independent &amp; Institutional Media Edits
+                      </p>
+                    </div>
+                    <span
+                      class="px-2 py-1 bg-[#1c1d22] text-[#f9f9fa] font-label-sm text-label-sm uppercase"
+                      >2024-2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Right: Textual Deliverables from Slide 6 -->
+              <div class="w-full flex flex-col justify-between gap-space-md">
+                <!-- Highlight 1: YouTube Video Projects -->
+                <div
+                  class="p-space-lg bg-[#14151a] flex flex-col gap-space-sm shadow-md"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-[#76777b] uppercase"
+                      >INDEPENDENT</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    YOUTUBE VIDEO PROJECTS
+                  </h3>
+                  <p
+                    class="font-label-md text-label-md text-[#cfa851] uppercase tracking-wider -mt-1"
+                  >
+                    Personal / Independent Projects
+                  </p>
+                  <ul
+                    class="flex flex-col gap-space-xs text-[#b8b9be] font-body-md text-body-md pt-space-xs"
+                  >
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-[#dfb256] text-[18px] shrink-0 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        >Developed video ideas and organized material into a
+                        clear sequence.</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-[#dfb256] text-[18px] shrink-0 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        >Selected clips and refined pacing, transitions, and
+                        audio where appropriate.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Highlight 2: Additional Content Creation -->
+                <div
+                  class="p-space-lg bg-[#14151a] flex flex-col gap-space-sm shadow-md"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-[#dfb256] uppercase"
+                      >ACTIVE • 2025–PRESENT</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-[#ffffff] font-medium"
+                  >
+                    ADDITIONAL CONTENT CREATION
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-space-xs text-[#b8b9be] font-body-md text-body-md pt-space-xs"
+                  >
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-[#dfb256] text-[18px] shrink-0 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        >Prepared content for online viewing with attention to
+                        clarity and audience.</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-[#dfb256] text-[18px] shrink-0 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        >Working on a YouTube meme channel (2025–present).</span
+                      >
+                    </li>
+                  </ul>
+                  <div
+                    class="mt-space-xs p-space-xs bg-[#191a20] text-[#858587] font-label-sm text-label-sm flex items-center gap-space-xs"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >info</span
+                    >
+                    <span
+                      >These are independent projects, not listed as formal
+                      employment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 08 Visual Trio: PROJECT HIGHLIGHTS -->
+            <div class="flex flex-col gap-space-lg pt-space-md">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span class="w-8 h-[1px] bg-[#dfb256]"></span>
+                  <h3
+                    class="font-headline-md text-headline-md text-[#ffffff] uppercase font-semibold"
+                  >
+                    PROJECT HIGHLIGHTS
+                  </h3>
+                </div>
+                <span
+                  class="font-label-sm text-label-sm uppercase text-[#76777b]"
+                  >TECHNICAL &amp; CREATIVE INTEGRATION</span
+                >
+              </div>
+              <!-- 3 Feature Cards Grid from Slide 08 -->
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+              >
+                <!-- Pillar 1: Content Planning (SpongeBob Writing) -->
+                <div
+                  class="bg-[#14151a] flex flex-col group overflow-hidden shadow-lg"
+                >
+                  <div
+                    class="relative w-full aspect-video bg-[#1e2029] overflow-hidden"
+                  >
+                    <img
+                      alt="Detailed project highlight showing Content Planning with creative ideation and storyboard conceptualization"
+                      class="w-full h-full object-cover object-left group-hover:scale-105 transition-all duration-500 filter brightness-90 group-hover:brightness-100"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDALUr2NP7Rx_cgrGANkUdbpdET8Nw9LHkMrSmvZ6hZsJK-aTdOC1y6Yp7jWFym2xp2AkrzTTRo3sAbf9yJ2zh6cz6q2sBu9a6cQtpAqAmR1O9Ms6FttrpufRDlmOntMmyf3Xc7XDdaGP3f6z2AkOyULp0ulsv-sOtNiMq_t24K0jCNqDn0TVZlwACz_PheqPOZYlI8gJVcZ9OqtqzEvIJH9K2p-lw4A9cBWkXrvEoQqZTISmgZ3Pk1"
+                    />
+                  </div>
+                  <div class="p-space-lg flex flex-col gap-space-xs">
+                    <h4
+                      class="font-headline-md text-headline-md text-[#dfb256] font-semibold uppercase"
+                    >
+                      CONTENT PLANNING
+                    </h4>
+                    <p
+                      class="font-body-md text-body-md text-[#b8b9be] leading-relaxed"
+                    >
+                      Developing video ideas and organizing material into a
+                      clear sequence.
+                    </p>
+                  </div>
+                </div>
+                <!-- Pillar 2: Editing Fundamentals (CapCut Timeline Editing) -->
+                <div
+                  class="bg-[#14151a] flex flex-col group overflow-hidden shadow-lg"
+                >
+                  <div
+                    class="relative w-full aspect-video bg-[#1e2029] overflow-hidden"
+                  >
+                    <img
+                      alt="Editing Fundamentals highlight showing multi-track timeline sequencing, keyframing, and video pacing workflow"
+                      class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-500 filter brightness-90 group-hover:brightness-100"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM5O_cp9ShpMlLFKlq_Eh1MBii0x25r_9j8NfHqfL0gMorOk6CP-asGuzm8dRVF7MhlVQqm-72Ba0RdSosWufe-hKVM8vM6Q-FXBYNx7tGGe4yqz6T_VrUNWAsb-Na8PoZPQKlmZO_EGOhkYyQ2cjwzgSz_F9tKUOXpHUsYeQ4MJVNYNeXXFEQG5erS_auIOcR9bdueN8Ro1fJd5kCzNBsp9BK-BNwtnCbb8ehQg08aOTvc-bhrG-L"
+                    />
+                  </div>
+                  <div class="p-space-lg flex flex-col gap-space-xs">
+                    <h4
+                      class="font-headline-md text-headline-md text-[#dfb256] font-semibold uppercase"
+                    >
+                      EDITING FUNDAMENTALS
+                    </h4>
+                    <p
+                      class="font-body-md text-body-md text-[#b8b9be] leading-relaxed"
+                    >
+                      Selecting clips, refining pacing, and applying transitions
+                      and audio adjustments.
+                    </p>
+                  </div>
+                </div>
+                <!-- Pillar 3: Technical Foundation (VSCode / Terminal Code Base) -->
+                <div
+                  class="bg-[#14151a] flex flex-col group overflow-hidden shadow-lg"
+                >
+                  <div
+                    class="relative w-full aspect-video bg-[#1e2029] overflow-hidden"
+                  >
+                    <img
+                      alt="Technical Foundation highlight"
+                      class="w-full h-full object-cover object-right group-hover:scale-105 transition-all duration-500 filter brightness-90 group-hover:brightness-100"
+                      src="Screenshot%202026-11-24%20213209.png"
+                    />
+                  </div>
+                  <div class="p-space-lg flex flex-col gap-space-xs">
+                    <h4
+                      class="font-headline-md text-headline-md text-[#dfb256] font-semibold uppercase"
+                    >
+                      TECHNICAL FOUNDATION
+                    </h4>
+                    <p
+                      class="font-body-md text-body-md text-[#b8b9be] leading-relaxed"
+                    >
+                      I developed my own responsive portfolio website to
+                      showcase my skills, projects, and achievements. The
+                      website is designed to provide a smooth and user-friendly
+                      experience across desktop, tablet, and mobile devices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 5. LET'S CONNECT / CONTACT SECTION (#contact) -->
+        <section
+          class="w-full py-space-xl bg-[#09090b] relative"
+          id="contact"
+          style="scroll-margin-top: 5.5rem"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl"
+          >
+            <!-- Big Contact Headline -->
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex items-center gap-space-sm">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                  >OPEN FOR OPPORTUNITIES</span
+                >
+                <span class="w-8 h-[1px] bg-[#dfb256]"></span>
+              </div>
+              <h2
+                class="font-display text-display text-[#ffffff] uppercase tracking-tight"
+              >
+                LET'S CONNECT
+              </h2>
+              <p class="font-body-lg text-body-lg text-[#b8b9be] max-w-2xl">
+                Interested in collaborating on video edits, YouTube channel
+                production, or digital content projects? Reach out directly.
+              </p>
+            </div>
+            <!-- Direct Contact Details -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-start">
+              <!-- Email Card with interactive click-to-copy -->
+              <div
+                class="p-space-lg bg-[#14151b] flex flex-col gap-space-sm shadow-md group hover:bg-[#181921] transition-colors"
+              >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                  >PRIMARY EMAIL</span
+                >
+                <div class="flex items-center justify-between gap-space-sm">
+                  <a
+                    class="font-headline-md text-headline-md text-[#ffffff] hover:text-[#dfb256] transition-colors truncate"
+                    href="mailto:quimelatquimjay@gmail.com"
+                  >
+                    quimelatquimjay@gmail.com
+                  </a>
+                  <button
+                    class="p-2 bg-[#202129] text-[#b8b9be] hover:text-[#ffffff] transition-colors shrink-0"
+                    onclick="navigator.clipboard.writeText('quimelatquimjay@gmail.com'); const btn = this.querySelector('span'); btn.textContent='done'; setTimeout(()=>btn.textContent='content_copy', 2000);"
+                    title="Copy Email"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >content_copy</span
+                    >
+                  </button>
+                </div>
+                <span class="font-label-sm text-label-sm text-[#76777b]"
+                  >Direct inquiries &amp; video briefs</span
+                >
+              </div>
+              <!-- Phone Card with click-to-call -->
+              <div
+                class="p-space-lg bg-[#14151b] flex flex-col gap-space-sm shadow-md group hover:bg-[#181921] transition-colors"
+              >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                  >PHONE / MOBILE</span
+                >
+                <div class="flex items-center justify-between">
+                  <a
+                    class="font-headline-md text-headline-md text-[#ffffff] hover:text-[#dfb256] transition-colors"
+                    href="tel:09516441688"
+                  >
+                    09516441688
+                  </a>
+                  <a
+                    class="p-2 bg-[#202129] text-[#b8b9be] hover:text-[#ffffff] transition-colors"
+                    href="tel:09516441688"
+                    title="Call Quimjay"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >call</span
+                    >
+                  </a>
+                </div>
+                <span class="font-label-sm text-label-sm text-[#76777b]"
+                  >Philippines Mobile (+63)</span
+                >
+              </div>
+              <!-- Location & Reference Card -->
+              <div
+                class="p-space-lg bg-[#14151b] flex flex-col gap-space-sm shadow-md"
+              >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-[#dfb256]"
+                  >LOCATION &amp; STATUS</span
+                >
+                <div class="flex items-center gap-space-sm text-[#ffffff]">
+                  <span
+                    class="material-symbols-outlined text-[#dfb256] text-[20px]"
+                    >location_on</span
+                  >
+                  <span class="font-body-lg text-body-lg"
+                    >Roxas City, Capiz, Philippines</span
+                  >
+                </div>
+                <div
+                  class="pt-space-xs border-t border-[#22232a] flex items-center justify-between text-[#858587]"
+                >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider"
+                    >References available upon request.</span
+                  >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >verified_user</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low border-t border-surface-variant py-space-xl"
+    >
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <span
+            class="font-headline-md text-headline-md text-on-surface tracking-tight"
+            >Quimjay V. Quimelat</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Video Editor &amp; Content Creator • Editorial Swiss Grid Portfolio
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-space-md">
+          <a
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+            href="#projects"
+            >Projects</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+            href="#education"
+            >Skills</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+            href="tel:09516441688"
+            >Phone</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-wider text-on-tertiary-container hover:underline"
+            href="mailto:quimelatquimjay@gmail.com"
+            >Email</a
+          >
+        </div>
+        <div
+          class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest pt-space-md md:pt-0 border-t md:border-t-0 border-surface-variant w-full md:w-auto"
+        >
+          © 2026 Quimjay V. Quimelat. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
