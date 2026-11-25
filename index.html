@@ -484,41 +484,24 @@
               <!-- Left: Studio Setup Visual (Slide 3 desk setup) -->
               <div class="lg:col-span-5 flex flex-col">
                 <div
-                  class="relative h-full min-h-[380px] bg-[#16171d] overflow-hidden flex flex-col justify-between group shadow-xl"
+                  class="relative h-full min-h-[380px] bg-[#16171d] overflow-hidden group shadow-xl"
                 >
-                  <!-- Workstation Image -->
-                  <div
-                    class="relative w-full aspect-video sm:aspect-auto sm:h-96 lg:h-full overflow-hidden"
+                  <!-- Full-bleed workstation video (no text overlays) -->
+                  <video
+                    aria-label="Quimjay's video editing workstation"
+                    poster="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ5t_mRbSDbghJDVddgDt5Acm87sqvWwUtnF8Xt5JCoO6EkofHCcUqleiUp6HJ6P2rV4DFVf5b-LJQkGJI6BGl1w3hgfW8PWoUD6BrcQrHE1AtTwrwIUWmoz7mEDnATRO2dPij6N3GKuS6dvXl2PCiqKel_MYMy1T1x-Nq8WlGobs6krW5P1X2NDNoBC6MWvWonK707XB_Ixda98e5Vy9Qcgyd7Dj7Sb1AkaZ4fKvWTjewEX8pty5P"
+                    class="absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
                   >
-                    <img
-                      alt="Quimjay's video editing workstation showing widescreen display, custom mechanical keyboard with RGB backlights, dual mice, and in-ear audio monitors on desk"
-                      class="w-full h-full object-cover filter brightness-90 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ5t_mRbSDbghJDVddgDt5Acm87sqvWwUtnF8Xt5JCoO6EkofHCcUqleiUp6HJ6P2rV4DFVf5b-LJQkGJI6BGl1w3hgfW8PWoUD6BrcQrHE1AtTwrwIUWmoz7mEDnATRO2dPij6N3GKuS6dvXl2PCiqKel_MYMy1T1x-Nq8WlGobs6krW5P1X2NDNoBC6MWvWonK707XB_Ixda98e5Vy9Qcgyd7Dj7Sb1AkaZ4fKvWTjewEX8pty5P"
+                    <source
+                      src="9b8a33f4-804a-4858-be4b-8e654cde8797.mp4"
+                      type="video/mp4"
                     />
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#0e0f13] via-[#0e0f13]/30 to-transparent"
-                    ></div>
-                    <!-- Badge overlay -->
-                    <div
-                      class="absolute top-4 left-4 px-3 py-1 bg-[#0a0a0c]/80 backdrop-blur-md text-[#dfb256] font-label-sm text-label-sm uppercase tracking-widest"
-                    >
-                      EDIT SUITE • HARDWARE DECK
-                    </div>
-                  </div>
-                  <!-- Description under photo -->
-                  <div
-                    class="p-space-md bg-[#13141a] flex flex-col gap-space-xs"
-                  >
-                    <span
-                      class="font-label-md text-label-md uppercase tracking-wider text-[#ffffff] font-medium"
-                      >Digital Production Setup</span
-                    >
-                    <p class="font-body-sm text-body-sm text-[#9a9ba0]">
-                      Clean dual-input peripheral desk configured for
-                      high-throughput video cutting, asset organizing, and
-                      multi-timeline scrubbing.
-                    </p>
-                  </div>
+                  </video>
                 </div>
               </div>
               <!-- Right: Background, Working Approach & Personal Details -->
@@ -1089,7 +1072,7 @@
                     <h4
                       class="font-headline-md text-headline-md text-[#dfb256] font-semibold uppercase"
                     >
-                      CONTENT PLANNING
+                      CONTENT
                     </h4>
                     <p
                       class="font-body-md text-body-md text-[#b8b9be] leading-relaxed"
