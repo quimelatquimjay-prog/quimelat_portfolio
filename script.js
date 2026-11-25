@@ -21,6 +21,7 @@ const revealSelectors = [
 
       const delayByParent = new Map();
       revealTargets.forEach((element) => {
+        element.classList.remove("is-visible");
         const parentKey = element.parentElement || document.body;
         const index = delayByParent.get(parentKey) || 0;
         element.style.setProperty("--reveal-delay", `${Math.min(index * 80, 320)}ms`);

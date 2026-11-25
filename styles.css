@@ -65,4 +65,18 @@
       .scroll-reveal.reveal-scale.is-visible {
         filter: none;
       }
+      /* Cards also use Tailwind's transition-colors, which would otherwise
+         replace the reveal transition and make them snap into view. */
+      main section .scroll-reveal {
+        transition-property:
+          opacity, transform, filter, background-color, color, border-color;
+        transition-duration:
+          800ms, 800ms, 800ms, 150ms, 150ms, 150ms;
+        transition-timing-function:
+          cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1),
+          cubic-bezier(0.16, 1, 0.3, 1), ease, ease, ease;
+        transition-delay:
+          var(--reveal-delay, 0ms), var(--reveal-delay, 0ms),
+          var(--reveal-delay, 0ms), 0ms, 0ms, 0ms;
+      }
       /* Reveal motion is intentionally kept on for this portfolio. */
