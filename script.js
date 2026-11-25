@@ -136,8 +136,8 @@ const revealSelectors = [
       const highlightSource = document.getElementById("content-planning-source");
       if (highlightVideo && highlightSource) {
         const clips = [
-          "f0815c5f-2d6c-4d81-aed7-e26778a258ab.mp4",
-          "10185294-872c-420d-9f59-0b2a56b50a7c.mp4",
+          "videos/f0815c5f-2d6c-4d81-aed7-e26778a258ab.mp4",
+          "videos/10185294-872c-420d-9f59-0b2a56b50a7c.mp4",
         ];
         let clipIndex = 0;
 
