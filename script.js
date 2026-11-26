@@ -151,3 +151,101 @@ const revealSelectors = [
           highlightVideo.play().catch(() => {});
         });
       }
+
+      // Video gallery: one button can hold as many videos as you add here.
+      // Add more { src, title } objects to expand the collection.
+      const galleryVideos = [
+        { src: "videos/vlog.mp4", title: "Personal Vlog" },
+        {
+          src: "videos/gaming.mp4",
+          title: "Gaming",
+        },
+        {
+          src: "videos/myvlog.mp4",
+          title: "Skill Highlight",
+        },
+      ];
+
+      const galleryButton = document.getElementById("open-video-gallery");
+      const galleryModal = document.getElementById("video-gallery-modal");
+      const galleryCloseButton = document.getElementById("video-gallery-close");
+      const galleryPlayer = document.getElementById("video-gallery-player");
+      const galleryCaption = document.getElementById("video-gallery-caption");
+      const galleryPlaylist = document.getElementById("video-gallery-playlist");
+
+      if (
+        galleryButton &&
+        galleryModal &&
+        galleryCloseButton &&
+        galleryPlayer &&
+        galleryCaption &&
+        galleryPlaylist
+      ) {
+        let lastFocusedElement = null;
+        const pad = (number) => String(number).padStart(2, "0");
+
+        const selectVideo = (index, shouldPlay = false) => {
+          if (!galleryVideos.length) return;
+          const selected = galleryVideos[index];
+          galleryPlayer.src = selected.src;
+          galleryPlayer.load();
+          galleryCaption.textContent = `${pad(index + 1)} / ${pad(galleryVideos.length)} — ${selected.title}`;
+
+          Array.from(galleryPlaylist.children).forEach((item, itemIndex) => {
+            const isActive = itemIndex === index;
+            item.classList.toggle("is-active", isActive);
+            item.setAttribute("aria-pressed", String(isActive));
+          });
+
+          if (shouldPlay) galleryPlayer.play().catch(() => {});
+        };
+
+        const renderPlaylist = () => {
+          galleryPlaylist.innerHTML = "";
+          galleryVideos.forEach((video, index) => {
+            const item = document.createElement("button");
+            item.type = "button";
+            item.className = "video-gallery-item";
+            item.setAttribute("aria-pressed", "false");
+
+            const number = document.createElement("span");
+            number.className = "video-gallery-index";
+            number.textContent = pad(index + 1);
+
+            const name = document.createElement("span");
+            name.className = "video-gallery-name";
+            name.textContent = video.title;
+
+            item.append(number, name);
+            item.addEventListener("click", () => selectVideo(index, true));
+            galleryPlaylist.appendChild(item);
+          });
+          selectVideo(0);
+        };
+
+        const openGallery = () => {
+          lastFocusedElement = document.activeElement;
+          galleryModal.hidden = false;
+          document.body.style.overflow = "hidden";
+          galleryCloseButton.focus();
+        };
+
+        const closeGallery = () => {
+          galleryPlayer.pause();
+          galleryModal.hidden = true;
+          document.body.style.overflow = "";
+          if (lastFocusedElement && lastFocusedElement.focus) {
+            lastFocusedElement.focus();
+          }
+        };
+
+        galleryButton.addEventListener("click", openGallery);
+        galleryModal
+          .querySelectorAll("[data-close-video-gallery]")
+          .forEach((element) => element.addEventListener("click", closeGallery));
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && !galleryModal.hidden) closeGallery();
+        });
+
+        renderPlaylist();
+      }

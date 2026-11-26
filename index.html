@@ -974,6 +974,28 @@
                       >
                     </li>
                   </ul>
+                  <button
+                    id="open-video-gallery"
+                    type="button"
+                    class="inline-flex items-center justify-center gap-space-sm px-space-md h-10 self-start mt-space-xs border border-[#dfb256]/40 text-[#dfb256] font-label-sm text-label-sm uppercase tracking-widest hover:bg-[#dfb256]/10 hover:border-[#dfb256] transition-colors"
+                    aria-haspopup="dialog"
+                    aria-controls="video-gallery-modal"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >play_circle</span
+                    >
+                    <span>See Video</span>
+                  </button>
+                  <video
+                    aria-label="Personal video project vlog"
+                    class="w-full aspect-video bg-black border border-[#dfb256]/20 shadow-inner"
+                    controls
+                    playsinline
+                    preload="metadata"
+                  >
+                    <source src="videos/vlog.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 <!-- Highlight 2: Additional Content Creation -->
                 <div
@@ -1186,7 +1208,9 @@
                 <div class="flex items-center justify-between gap-space-sm">
                   <a
                     class="font-headline-md text-headline-md text-[#ffffff] hover:text-[#dfb256] transition-colors truncate"
-                    href="mailto:quimelatquimjay@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=quimelatquimjay@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     quimelatquimjay@gmail.com
                   </a>
@@ -1330,6 +1354,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- Video gallery opened by the "See Video" button -->
+    <div
+      id="video-gallery-modal"
+      class="video-gallery-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="video-gallery-title"
+      hidden
+    >
+      <div class="video-gallery-backdrop" data-close-video-gallery></div>
+      <div class="video-gallery-panel">
+        <div class="video-gallery-header">
+          <div>
+            <span class="video-gallery-eyebrow">VIDEO COLLECTION</span>
+            <h2 id="video-gallery-title" class="video-gallery-title">
+              PERSONAL VIDEO PROJECTS
+            </h2>
+          </div>
+          <button
+            id="video-gallery-close"
+            type="button"
+            class="video-gallery-close"
+            aria-label="Close video gallery"
+            data-close-video-gallery
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="video-gallery-body">
+          <div class="video-gallery-stage">
+            <video
+              id="video-gallery-player"
+              controls
+              playsinline
+              preload="metadata"
+              aria-label="Selected video project"
+            ></video>
+            <p id="video-gallery-caption" class="video-gallery-caption"></p>
+          </div>
+          <div
+            id="video-gallery-playlist"
+            class="video-gallery-playlist"
+            aria-label="Video playlist"
+          ></div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
